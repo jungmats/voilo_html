@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>voilo Privacy Policy</title>
+  <link rel="stylesheet" href="voilo-styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="../voilo-100.png" alt="voilo Icon">
+      <h1>voilo</h1>
+    </div>
+    <p class="tagline">Privacy Policy</p>
+  </header>
+
+  <nav class="tabs">
+    <a href="index.html">Home</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+
+  <div class="container">
+    <main>
+      <section>
+        <h1>voilo Privacy Policy</h1>
+        <p><strong>Last updated:</strong> November 25, 2025</p>
+
+        <p>
+          This Privacy Policy describes how voilo - your voice sheets ("the App") collects, uses, and protects your information.
+          We are committed to transparency about data practices and your privacy.
+        </p>
+
+        <h2>Data Collection and Storage</h2>
+
+        <h3>Information Stored Locally on Your Device</h3>
+        <p>The following data is stored locally on your device and is not transmitted to our servers:</p>
+        <ul>
+          <li><strong>Tracker Definitions:</strong> The data structures you create to define your trackers</li>
+          <li><strong>Saved Transcriptions:</strong> Voice transcriptions you save for later submission</li>
+          <li><strong>Reminder Configuration:</strong> Your notification and reminder preferences</li>
+          <li><strong>App Settings:</strong> Feature toggles, selected tracker preferences, and other app configuration</li>
+        </ul>
+        <p>This data is stored using iOS SwiftData framework and UserDefaults, and is not backed up to iCloud or any other cloud service.</p>
+
+        <h3>Audio Recording and Transcription</h3>
+        <p>
+          When you record audio to create an entry, the App uses Apple's on-device Speech Recognition framework to transcribe your voice.
+          The audio recording is processed entirely on your device and is not stored by the App after transcription.
+          No audio data is sent to external servers or third parties.
+        </p>
+
+        <h3>Google Services Integration and User Data</h3>
+        <p>
+          voilo requires Google authentication to function. When you sign in with Google, the App accesses the following Google user data:
+        </p>
+        <ul>
+          <li><strong>Google Account Email Address:</strong> Used to authenticate your identity and associate your device with your Google account</li>
+          <li><strong>Google Profile Information:</strong> Your name is used to display which Google account is currently connected in the app</li>
+          <li><strong>Google Sheets Files:</strong> The App accesses metadata (file names, IDs, modification dates) and content of spreadsheets that the App creates in your Google Drive</li>
+          <li><strong>Google Drive Permissions:</strong> The App requests limited Drive access (drive.file scope) to create and manage only the spreadsheets it generates</li>
+        </ul>
+
+        <p><strong>How voilo Uses Your Google User Data:</strong></p>
+        <ul>
+          <li>Your email address is used solely for authentication purposes</li>
+          <li>Your profile name is displayed in the app interface to confirm which Google account is active</li>
+          <li>Google Sheets are created in your Drive to store your tracker data; the App reads formatting information from these sheets and writes new entries based on your voice transcriptions</li>
+          <li>The App only accesses spreadsheets that it creates. It does not access other files in your Google Drive</li>
+        </ul>
+
+        <p><strong>Sharing and Disclosure of Google User Data:</strong></p>
+        <ul>
+          <li>voilo does NOT share your Google user data with any third parties</li>
+          <li>When you submit a transcription, only your tracker's data structure and the transcribed text are sent to OpenAI's API for processing. No Google account information (email, name, or credentials) is shared with OpenAI or any other third party</li>
+          <li>All spreadsheets are created in your own Google Drive account, and you retain full ownership and control over them</li>
+          <li>Your Google account credentials are handled exclusively by Google's OAuth system and are never stored or accessed by the App</li>
+        </ul>
+
+        <p>
+          Google's use of your information is governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.
+          For details on the OAuth scopes requested, the App uses:
+        </p>
+        <ul>
+          <li><strong>Google Sheets API:</strong> To read formatting from and write data to spreadsheets</li>
+          <li><strong>Google Drive API (drive.file scope):</strong> To create and manage spreadsheets that the App generates</li>
+        </ul>
+
+        <h3>OpenAI API Usage</h3>
+        <p>
+          When you submit a transcription, the App sends your transcribed text along with your tracker's data structure to OpenAI's API
+          to parse and format the information for insertion into your spreadsheet. This processing happens directly from your device using
+          API keys embedded in the App.
+        </p>
+        <p>
+          According to OpenAI's API data usage policy, API requests may be retained for up to 30 days for abuse and misuse monitoring,
+          after which they are deleted. OpenAI states that data sent via the API is not used to train their models unless you explicitly
+          opt in. For more information, see <a href="https://openai.com/enterprise-privacy/" target="_blank">OpenAI's Enterprise Privacy Policy</a>.
+        </p>
+        <p>
+          We do not store copies of the data sent to OpenAI on our servers. In development builds only, local device logs may temporarily
+          record API requests for debugging purposes. These logs remain on your device and are automatically rotated. Release builds of the
+          App do not log sensitive or personal information.
+        </p>
+
+        <h3>TestFlight Beta Testing</h3>
+        <p>
+          If you participate in beta testing through Apple's TestFlight program, TestFlight may collect crash logs, usage data, and feedback
+          that you provide. This data is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>
+          and is used solely for improving the App during the beta testing phase.
+        </p>
+
+        <h2>Data We Do Not Collect</h2>
+        <p>voilo does not:</p>
+        <ul>
+          <li>Collect or store your audio recordings</li>
+          <li>Maintain user accounts or profiles on our servers</li>
+          <li>Track your location</li>
+          <li>Use analytics or advertising services</li>
+          <li>Access Google Drive files that were not created by the App</li>
+          <li>Share your data with third parties for marketing purposes</li>
+        </ul>
+
+        <h2>Data Security</h2>
+        <p>
+          Your data security is important to us. The App processes your voice recordings on-device using Apple's Speech Recognition framework.
+          Communications with Google and OpenAI APIs are conducted over secure HTTPS connections. Since most data is stored locally on your
+          device, you have direct control over its security through your device's built-in protections (passcode, Face ID, Touch ID, etc.).
+        </p>
+
+        <h2>Data Deletion</h2>
+        <p>
+          You have full control over your data. To delete your information:
+        </p>
+        <ul>
+          <li><strong>Local Data:</strong> Delete the voilo app from your device to remove all locally stored tracker definitions, transcriptions, and settings</li>
+          <li><strong>Google Sheets Data:</strong> Delete the spreadsheets created by voilo from your Google Drive</li>
+          <li><strong>Google Access:</strong> Revoke voilo's access to your Google account through your <a href="https://myaccount.google.com/permissions" target="_blank">Google Account permissions page</a></li>
+        </ul>
+        <p>
+          No additional steps are required. We do not maintain copies of your data on our servers.
+        </p>
+
+        <h2>Children's Privacy</h2>
+        <p>
+          voilo is not directed to children under the age of 13, and we do not knowingly collect personal information from children under 13.
+        </p>
+
+        <h2>Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last updated" date.
+          We encourage you to review this policy periodically.
+        </p>
+
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or concerns about this Privacy Policy or how voilo handles your data, please contact us at
+          <a href="mailto:privacy@eleviq.solutions">privacy@eleviq.solutions</a>.
+        </p>
+
+        <h2>Legal Information</h2>
+        <p>
+          voilo is operated by ElevIQ Solutions.<br>
+          Numéro Siren: 940258254
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <p>&copy; 2025 voilo by ElevIQ Solutions</p>
+  </footer>
+
+</body>
+</html>

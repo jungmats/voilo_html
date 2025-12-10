@@ -202,6 +202,63 @@ header .cta-button-compact:hover {
   font-size: 1.1rem;
 }
 
+.screenshot-gallery {
+  margin: 3rem 0;
+  overflow: hidden;
+}
+
+
+.screenshot-scroll {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--voilo-green) var(--accent);
+}
+
+.screenshot-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.screenshot-scroll::-webkit-scrollbar-track {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+.screenshot-scroll::-webkit-scrollbar-thumb {
+  background: var(--voilo-green);
+  border-radius: 4px;
+}
+
+.screenshot-item {
+  flex: 0 0 auto;
+  width: 200px;
+  scroll-snap-align: center;
+}
+
+.screenshot-caption {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.screenshot-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+}
+
+.screenshot-item img:hover {
+  transform: scale(1.02);
+}
+
 @media (max-width: 768px) {
   header .header-content {
     flex-direction: column;

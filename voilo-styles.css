@@ -181,4 +181,8 @@ footer nav a:hover {
   .container {
     padding: 1rem;
   }
+
+  nav.tabs {
+    display: none;
+  }
 }

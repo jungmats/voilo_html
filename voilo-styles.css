@@ -183,6 +183,6 @@ footer nav a:hover {
   }
 
   nav.tabs {
-    display: none;
+    display: none !important;
   }
 }

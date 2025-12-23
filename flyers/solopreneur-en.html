@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Voilo - Dictate your actions</title>
+  <link rel="stylesheet" href="../voilo-styles.css">
+  <link rel="stylesheet" href="../landing-page.css">
+  <style>
+    .transform-arrow {
+      text-align: center;
+      font-size: 2em;
+      margin: 20px 0;
+      color: #4A90E2;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+    }
+
+    .data-table th,
+    .data-table td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    .data-table th {
+      font-weight: bold;
+      background-color: #e8e8e8;
+    }
+
+    .data-table td {
+      background-color: white;
+    }
+
+    .data-table code {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1em;
+      background-color: transparent;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <div class="header-left">
+        <div class="logo">
+          <img src="../voilo-100.png" alt="Voilo Icon">
+          <h1>Voilo</h1>
+        </div>
+        <p class="tagline">Dictate your client contacts, actions and follow-ups</p>
+      </div>
+      <div class="header-cta">
+        <iframe data-tally-src="https://tally.so/embed/NprMr0?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="120" frameborder="0" marginheight="0" marginwidth="0" title="Join Voilo Beta"></iframe>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <main>
+
+      <section>
+        <h2>How it works</h2>
+        <p>Voilo transforms your updates in seconds: you speak,
+          and your reports fill themselves automatically, cleanly and without paper.
+          Replace handwritten notes and WhatsApp messages with a
+          voice journal that automatically saves to Google Sheets.</p>
+        <div class="steps-container">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Open the app</h3>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Dictate</h3>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>View in Google</h3>
+          </div>
+        </div>
+
+        <div class="example-quote">
+          <h3>Example dictation</h3>
+          <p>"Call with Martin completed: approved the new proposal, need to send the detailed quote by Friday and schedule a follow-up in two weeks."</p>
+
+          <div class="transform-arrow">▼</div>
+
+          <table class="data-table">
+            <tr>
+              <th><code>Date</code></th>
+              <th><code>Client</code></th>
+              <th><code>Subject</code></th>
+              <th><code>Action</code></th>
+              <th><code>Follow-up</code></th>
+            </tr>
+            <tr>
+              <td><code>Jan 15, 2026</code></td>
+              <td><code>Martin</code></td>
+              <td><code>Client Call</code></td>
+              <td><code>Send quote</code></td>
+              <td><code>Jan 29, 2026</code></td>
+            </tr>
+          </table>
+        </div>
+
+
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    <div>
+      Voilo • hello@voilo.app • voilo.app
+    </div>
+  </footer>
+
+  <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+
+</body>
+</html>
